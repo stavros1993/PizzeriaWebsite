@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  order: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: #F1ECEC;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-image: url("/static/pictures/homepage/back.jpg");
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F1ECEC;
+  padding: 0.5% 1%;
+  width: 100vw;
+}
+
+.header>div {
+  display: flex;
+}
+
+.logo-div {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 55%;
+}
+
+.header-button-div {
+  margin-left: -10%;
+}
+
+.header-button {
+  border: none;
+  background-color: transparent;
+  padding: 0 2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black !important;
+  transition-duration: 0.5s;
+}
+
+.mobile-button {
+  display: none;
+}
+
+.social-media-icon {
+  padding-right: 2rem;
+  color: #343a40;
+  transition-duration: 0.5s;
+}
+
+.social-media-icon:hover {
+  color: #AE360E;
+}
+
+.header-button:hover {
+  color: #AE360E !important;
+}
+
+.phone-text {
+  color: #343a40;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+.phone-text:hover {
+  transition-duration: 0.5s;
+  color: #AE360E;
+}
+
+#phone-text-mobile {
+  display: none;
+}
+
+@media (max-width:1200px) {
+  .phone-text {
+    display: none;
+  }
+
+  #phone-text-mobile {
+    display: inline;
+    padding-right: 2rem;
+  }
+
+  .social-media-icon {
+    padding-right: 2rem;
+  }
+
+  .social-media-icon-div {
+    margin-right: 1.5%;
+  }
+}
+
+@media (max-width:1038px) {
+  #phone-text-mobile {
+    padding-right: 0rem;
+  }
+
+  .social-media-icon {
+    padding-right: 1rem;
+  }
+
+  .social-media-icon-div {
+    margin-right: 1.5%;
+  }
+}
+
+/*width:1050 next*/
+@media (max-width: 991px) {
+  .header {
+    align-items: baseline;
+  }
+
+  .header-button {
+    margin-top: 0.6rem;
+  }
+
+  #phone-text-mobile {
+    display: inline;
+    padding-right: 2rem;
+  }
+
+  .header-button-div {
+    order: -1;
+    margin-left: 0.5rem;
+  }
+
+  .social-media-icon {
+    margin-right: 1.5rem;
+  }
+
+  .logo-div {
+    flex: 1 1 auto;
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 680px) {
+  .social-media-icon {
+    margin-right: 0rem;
+  }
+
+  #phone-text-mobile {
+    display: none;
+  }
+}
