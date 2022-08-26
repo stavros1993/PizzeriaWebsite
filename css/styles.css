@@ -8,7 +8,7 @@
 body {
   background-color: #F1ECEC;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("/static/pictures/homepage/background.jpg");
+  background-image: url("static/pictures/homepage/background.jpg");
   position: relative;
 }
 
@@ -245,7 +245,7 @@ body {
 }
 
 .about-us-intro {
-  background-image: url("/static/pictures/homepage/background/about-us.jpg");
+  background-image: url("static/pictures/homepage/background/about-us.jpg");
   margin-bottom: 3vh;
 }
 
@@ -272,7 +272,7 @@ body {
 }
 
 .menu-intro {
-  background-image: url("/static/pictures/homepage/background/menu.jpg");
+  background-image: url("static/pictures/homepage/background/menu.jpg");
 }
 
 .menu-header {
@@ -449,7 +449,7 @@ body {
 
 .contact-intro {
   margin-top: 2vh;
-  background-image: url("/static/pictures/homepage/background/contact-us.jpg");
+  background-image: url("static/pictures/homepage/background/contact-us.jpg");
 }
 
 .contact-form {
