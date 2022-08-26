@@ -16,49 +16,54 @@
 
 <body>
 
-  <div class="header">
-    <div class="logo-div">
-      <a href="/" class=""><img class="logo" src="static/pictures/logo.png" alt=""></a>
-    </div>
-
-    <div class="header-button-div">
-
-      <div class="menu-links">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ">
-                <a class="nav-link header-button" href="#about-us">ABOUT US</a>
-                <a class="nav-link header-button" aria-current="page" href="#menu">MENU</a>
-                <a class="nav-link header-button" href="#">EVENTS</a>
-                <a class="nav-link header-button" href="#" tabindex="-1" aria-disabled="true">CONTACT US</a>
-              </div>
-            </div>
-          </div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-div" href="index.html">
+        <img class="logo" src="static/pictures/logo.png" alt="" width="200" height="40" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 " style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about-us">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact-us">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="phone-text" href="tel:+30 210 12 34 123 "><i class="fa-solid fa-phone"></i> 210 12 34 123</a>
+          <a class="phone-text" id="phone-text-mobile" href="tel:+30 222 77 123"> <i class="fa-solid fa-phone"></i></a>
+          <a href="https://www.facebook.com/PizzaWorld"><i class="fa-brands fa-facebook fa-xl social-media-icon"></i></a>
+          <a href="https://www.instagram.com/PizzaWorld"><i class="fa-brands fa-instagram fa-xl social-media-icon"></i></a>
+          <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-twitter fa-xl social-media-icon"></i></a>
+          <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-tiktok fa-xl social-media-icon"></i></a>
+          <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-youtube fa-xl social-media-icon"></i></a>
+          <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-pinterest fa-xl social-media-icon"></i></a>
+        </form>
       </div>
-
     </div>
+  </nav>
 
-    <div class="social-media-icon-div">
-
-      <a class="phone-text" href="tel:+30 222 77 123"> <i class="fa-solid fa-phone"></i> +30 222 77 123</a>
-      <a class="phone-text" id="phone-text-mobile" href="tel:+30 222 77 123"> <i class="fa-solid fa-phone"></i></a>
-      <a href="https://www.facebook.com/PizzaWorld"><i class="fa-brands fa-facebook fa-xl social-media-icon"></i></a>
-      <a href="https://www.instagram.com/PizzaWorld"><i class="fa-brands fa-instagram fa-xl social-media-icon"></i></a>
-      <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-twitter fa-xl social-media-icon"></i></a>
+  <div id="food-carousel" class="carousel slide carousel-fade" data-bs-ride="true" data-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#food-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#food-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#food-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#food-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#food-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
-
-  </div>
-
-  <div id="food-carousel" class="carousel slide carousel-fade" data-bs-ride="true">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="carousel-img" src="static/pictures/homepage/slideshow/slideshow1.jpeg" class="slideshow-img d-block" alt="...">
+        <img class="carousel-img" src="static/pictures/homepage/slideshow/slideshow1.jpg" class="slideshow-img d-block" alt="...">
       </div>
       <div class="carousel-item">
         <img class="carousel-img" src="static/pictures/homepage/slideshow/slideshow2.jpg" class="slideshow-img d-block" alt="...">
@@ -73,6 +78,7 @@
         <img class="carousel-img" src="static/pictures/homepage/slideshow/slideshow5.jpg" class="slideshow-img d-block" alt="...">
       </div>
     </div>
+
     <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#food-carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
@@ -99,16 +105,18 @@
       </div>
     </div>
 
-    <div class="about-us-text">
+    <div class="section-text">
       <div>
         <p><b>Welcome to Pizza World!</b></p>
-        <p>
-          Our pizzeria has been successfully owned and operated since 2005 by our family and welcomes you to drop by and join the locals in our fun and friendly atmosphere. We are located near the historical center, next to the metro station.
+        <p class="welcome-text">
+          Our pizzeria has been successfully owned and operated since 2005 by our family and welcomes you to drop by and join the locals in our fun and friendly atmosphere. We are located near the historical center, next to the Monastiraki metro
+          station.
         </p>
-        <p>
-          Our goal is to offer great and healthy homemade food at a reasonable price while maintaining great quality and service. Enjoy a selection of appetizers, pizza and spaghetti, including everything from classic favorites to modern cuisine..
+        <p class="welcome-text">
+          Our goal is to constantly offer great and healthy homemade food at a very reasonable price while maintaining great quality and service. Enjoy a selection of appetizers, pizza, spaghetti and desserts, including everything from classic
+          favorites to modern cuisine.
         </p>
-        <p><b>Come join us </b> for lunch or dinner and dine on our outdoor patio or in the newly remodeled dining room.</p>
+        <p class="welcome-text"><b>Come join us </b> for lunch or dinner and dine in our beautiful outdoor patio or in the newly remodeled dining room.</p>
       </div>
     </div>
 
@@ -178,7 +186,7 @@
               <p class="food-name"><strong>Potato Skins</strong></p>
             </div>
             <div>
-              <p class="food-price">5.90€</p>
+              <p class="food-price">3.90€</p>
             </div>
           </div>
           <div>
@@ -205,7 +213,7 @@
 
         <div class="food-card appetizers">
           <div>
-            <div><img class="food-pic" src="static/pictures/homepage/menu/appetizers/buffaoDip.jfif" alt=""></div>
+            <div><img class="food-pic" src="static/pictures/homepage/menu/appetizers/BuffaloChickenDip.webp" alt=""></div>
           </div>
           <div>
             <div>
@@ -657,19 +665,94 @@
 
   </section>
 
-
   <section id="contact-us">
 
+    <div class="intro-picture contact-intro">
+      <div>
+        <label> CONTACT </label>
+      </div>
+    </div>
 
+    <div class="section-text">
+      <div>
+        <p><b>Newsletter Sign-up</b></p>
+        <p class="contact-text">Sign up to our newsletter or follow us on our social media accounts and be the first one to receive our best offers and special discounts!</p>
+      </div>
+    </div>
 
+    <div class="newsletter-form">
+      <form action="https://formsubmit.co/stavrosrchp@gmail.com" id="newsletter-form" method="POST">
+        <input type="email" id="email-input" name="email" placeholder="Email Address"> <br>
+        <input type="hidden" name="_subject" value="New Email Registration!">
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="newsletter-submit">Register</button>
+      </form>
+    </div>
 
-
-
+    <div class="input-check" id="email-error-field"></div>
+    <div class="input-check" id="email-success-field"></div>
 
   </section>
 
-  <script type="text/javascript">
-  </script>
+  <br />
+
+  <section id="footer">
+    <div class="contact-details">
+      <div class="container contact-info">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <p class="contact-info-header">Opening Hours</p>
+            <p class="contact-info-text"><i class="fa-solid fa-clock"></i> 12:00 - 00:30</p>
+            <p class="contact-info-text">&#160;<i class="fa-solid fa-phone"></i>210 12 34 123</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div>
+              <a href="https://www.facebook.com/PizzaWorld"><i class="fa-brands fa-facebook fa-2xl social-media-icon"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/PizzaWorld"><i class="fa-brands fa-instagram fa-2xl social-media-icon"></i></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-twitter fa-2xl social-media-icon"></i></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/PizzaWorld"><i class="fa-brands fa-tiktok fa-2xl social-media-icon"></i></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/PizzaWorld"><i class="fa-brands fa-youtube fa-2xl social-media-icon"></i></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/PizzaWorld"><i class="fa-brands fa-pinterest fa-2xl social-media-icon"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div>
+              <a href="https://www.facebook.com/PizzaWorld"><img class="app-img" src="static/pictures/homepage/footer/appstore.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/PizzaWorld"><img class="app-img" src="static/pictures/homepage/footer/playstore.png" alt=""></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/PizzaWorld"><img class="app-img" src="static/pictures/homepage/footer/appGall.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="cards" src="static/pictures/homepage/footer/cards.png" alt="">
+    </div>
+
+    <footer>
+      <div>
+        Developed by <a href="https://github.com/stavros1993">Stavros Lioulias</a>
+      </div>
+      <div>
+        Copyright @ Pizza World 2022
+      </div>
+    </footer>
+
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
 </body>
