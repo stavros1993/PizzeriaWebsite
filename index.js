@@ -34,13 +34,11 @@ function showMenu(x, btnId) {
     case 4:
       $(".spaghetti").addClass("show-menu");
       $("#" + btnId).addClass("chosen-menu");
-      console.log("#" + btnId);
       break;
 
     case 5:
       $(".desserts").addClass("show-menu");
       $("#" + btnId).addClass("chosen-menu");
-      console.log("#" + btnId);
       break;
 
     default:
@@ -48,7 +46,7 @@ function showMenu(x, btnId) {
   }
 }
 
-const form = document.getElementById('submit-btn');
+const formSubmitButton = document.getElementById('submit-btn');
 
 let formEmail = document.getElementById('user-email');
 let formName = document.getElementById('user-name');
@@ -62,7 +60,7 @@ const invalidMessageField = document.getElementById("user-message-check");
 
 let validInputs;
 
-form.addEventListener("click", (e) => {
+formSubmitButton.addEventListener("click", (e) => {
 
   validInputs = 0;
 
@@ -135,9 +133,16 @@ form.addEventListener("click", (e) => {
     invalidMessageField.innerText = "";
   }
 
-  console.log(validInputs);
   if (validInputs < 4) {
     e.preventDefault();
   }
-  //$("body").addClass("newsletter-success");
 })
+
+const userInputFields = document.querySelectorAll(".user-inputs"); //Selecting the user input fields
+const inputCheckFields = document.querySelectorAll(".input-check"); //Selecting the input check divs
+
+userInputFields.forEach((curInputField) => { //For each user input field, we add an eventListener (focus)
+  curInputField.addEventListener("focus", (e) => {
+    curInputField.nextElementSibling.innerText = ""; //When user clicks on the respective text field, the error field below it disappears
+  });
+});
