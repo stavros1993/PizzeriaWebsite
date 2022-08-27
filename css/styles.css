@@ -8,7 +8,7 @@
 body {
   background-color: #F1ECEC;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('../static/pictures/homepage/background.jpg');
+  background-image: url(../static/pictures/homepage/background.jpg);
 }
 
 .header {
