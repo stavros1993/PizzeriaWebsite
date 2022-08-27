@@ -101,15 +101,6 @@ body {
 }
 
 @media (max-width:1200px) {
-  .phone-text {
-    display: none;
-  }
-
-  #phone-text-mobile {
-    display: inline;
-    padding-right: 2rem;
-  }
-
   .social-media-icon {
     padding-right: 2rem;
   }
@@ -120,8 +111,13 @@ body {
 }
 
 @media (max-width:1048px) {
+  .phone-text {
+    display: none;
+  }
+
   #phone-text-mobile {
-    padding-right: 0;
+    display: inline;
+    padding-right: 2rem;
   }
 
   .social-media-icon {
@@ -142,10 +138,6 @@ body {
     margin: 2vh 0vh;
   }
 
-  .header-links>a>.header-button {
-    display: none !important;
-  }
-
   .header {
     align-items: baseline;
   }
@@ -163,17 +155,9 @@ body {
     margin-left: 0.5rem;
   }
 
-  .social-media-icon {
-    margin-right: 1.5rem;
-  }
-
   .logo-div {
     flex: 1 0 auto;
     min-width: 75%;
-  }
-
-  .d-flex>a>.fa-pinterest, .d-flex>a>.fa-youtube {
-    display: inline-block;
   }
 }
 
@@ -473,7 +457,7 @@ body {
 }
 
 #user-message {
-  min-height:  15vh;
+  min-height: 15vh;
 }
 
 .user-inputs {
@@ -502,7 +486,8 @@ body {
 
 #submit-btn:hover {
   background-color: black;
-box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;}
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
 
 #email-input:focus {
   outline: 1px solid #AE360E;
@@ -582,8 +567,8 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 5
 }
 
 .app-img:hover {
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-border-radius: 1vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1vh;
 }
 
 .contact-details {
@@ -599,7 +584,9 @@ border-radius: 1vh;
 }
 
 @media (max-width: 992px) {
-  .contact-info {}
+  .d-flex>a>.social-media-icon {
+    display: none;
+  }
 
   .col-lg-4>div>a>.social-media-icon {
     font-size: 1.4rem;
@@ -697,7 +684,9 @@ footer>div>a {
 }
 
 #scrollToTopButton:hover {
-  background-color: #343a40;; /* Add a dark-grey background on hover */
+  background-color: #343a40;
+  ;
+  /* Add a dark-grey background on hover */
 }
 
 #thank-you-page-text>div {
