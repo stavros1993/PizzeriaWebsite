@@ -133,6 +133,7 @@ body {
   .d-flex>a>.social-media-icon {
     display: none;
   }
+
   .nav-item {
     margin: 0.3vh 0vh;
   }
@@ -262,8 +263,9 @@ body {
 }
 
 .menu-header {
-  display: flex;
+  display: grid;
   background-color: #AE360E;
+  grid-template-columns: repeat(5, 10rem);
   justify-content: center;
   margin-bottom: 1vh;
   padding: 0.5vh;
@@ -282,12 +284,18 @@ body {
   color: #EAEAEA;
   transition-duration: 0.5s;
   margin: 0 1vh;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .menu-btn:hover {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+}
+
+.chosen-menu {
+  color: white !important;
+  font-size: 1.3rem !important;
+  text-decoration: underline white 2px;
 }
 
 .grid {
@@ -325,12 +333,10 @@ body {
   margin-bottom: 0;
   color: #343a40;
   font-size: 0.9rem;
-  padding: 0 0.5vw 1vh;
 }
 
 .food-name {
-  margin-bottom: 1vh;
-  padding: 0 0.5vw 1vh;
+  font-size: 1.1rem;
 }
 
 .food-price {
@@ -338,8 +344,15 @@ body {
   justify-content: space-between;
   color: green;
   font-size: 1.2rem;
-  margin-bottom: 1vh;
-  padding: 0 0.5vw 1vh;
+  margin-bottom: 0.5rem;
+}
+
+.food-description {
+  padding: 0 1rem 1rem;
+}
+
+.food-name, .food-price {
+  padding: 0 1rem;
 }
 
 .food-card div:nth-of-type(3) {
@@ -359,10 +372,15 @@ body {
   display: block;
 }
 
-.chosen-menu {
-  color: white !important;
-  font-size: 1.2rem !important;
-  text-decoration: underline white 2px;
+@media (max-width: 1600px) {
+  .food-card {
+    max-width: 18vw;
+  }
+
+  .food-pic {
+    width: 18vw;
+    height: 16vw;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -375,11 +393,11 @@ body {
   }
 
   .food-card {
-    max-width: 16vw;
+    max-width: 24vw;
   }
 
   .food-pic {
-    width: 16vw;
+    width: 24vw;
     height: 16vw;
   }
 }
@@ -395,20 +413,36 @@ body {
   }
 
   .food-card {
-    max-width: 18vw;
+    max-width: 26vw;
   }
 
   .food-pic {
-    width: 18vw;
+    width: 26vw;
     height: 18vw;
   }
 
   .menu-btn {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .chosen-menu, .menu-btn:hover {
     font-size: 1rem !important;
+  }
+
+  .full-menu-container {
+    row-gap: 2vw;
+  }
+
+  .menu-btn {
+    font-size: 1.1rem;
+  }
+
+  .menu-btn:hover {
+    font-size: 1.2rem;
+  }
+
+  .chosen-menu {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -418,18 +452,22 @@ body {
   }
 
   .food-card {
-    max-width: 30vw;
+    max-width: 40vw;
   }
 
   .food-pic {
-    width: 30vw;
+    width: 40vw;
     height: 30vw;
+  }
+
+  .menu-header {
+    grid-template-columns: repeat(3, 10rem);
   }
 }
 
-@media (max-width: 550px) {
-  .menu-btn {
-    font-size: 0.8rem;
+@media (max-width: 500px) {
+  .menu-header {
+    grid-template-columns: repeat(1, 10rem);
   }
 }
 
