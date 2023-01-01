@@ -372,6 +372,12 @@ body {
   display: block;
 }
 
+.cards {
+  display: block;
+  margin: 3vh auto 1vh;
+  width: 15%;
+}
+
 @media (max-width: 1600px) {
   .food-card {
     max-width: 18vw;
@@ -552,6 +558,10 @@ body {
   width: 50vw;
 }
 
+.contact-icon {
+  margin-right: 0.3rem;
+}
+
 .row>div {
   color: #595959;
   padding-top: 1vw;
@@ -622,6 +632,10 @@ body {
     text-align: center;
     width: 66vw;
   }
+
+  .cards {
+    width: 25%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -633,17 +647,25 @@ body {
   .contact-info-text {
     font-size: 1rem;
   }
+
+  .cards {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
   .contact-info {
     width: 100vw;
   }
+
+  .cards {
+    width: 35%;
+  }
 }
 
 @media (max-width: 576px) {
   .contact-info {
-    width: 68vw;
+    width: 90vw;
   }
 
   .contact-info-text {
@@ -678,12 +700,34 @@ body {
   .contact-info-header {
     display: none;
   }
+
+  .cards {
+    width: 50%;
+  }
 }
 
-.cards {
-  display: block;
-  margin: 3vh auto 1vh;
-  width: 15%;
+@media (max-width: 382px) {
+  .contact-info-text {
+    font-size: 1rem;
+  }
+
+  .app-img {
+    width: 90%;
+  }
+
+  .cards {
+    width: 70%;
+  }
+}
+
+@media (max-width: 322px) {
+  .contact-info-text {
+    font-size: 0.8rem;
+  }
+
+  .app-img {
+    width: 85%;
+  }
 }
 
 footer {
