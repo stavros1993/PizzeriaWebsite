@@ -266,7 +266,7 @@ body {
   display: grid;
   background-color: #AE360E;
   grid-template-columns: repeat(5, 10rem);
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 1vh;
   padding: 0.5vh;
 }
@@ -458,7 +458,7 @@ body {
   }
 
   .food-card {
-    max-width: 40vw;
+    max-width: 43vw;
   }
 
   .food-pic {
