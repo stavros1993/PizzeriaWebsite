@@ -266,7 +266,7 @@ body {
   display: grid;
   background-color: #AE360E;
   grid-template-columns: repeat(5, 10rem);
-  justify-content: left;
+  justify-content: center;
   margin-bottom: 1vh;
   padding: 0.5vh;
 }
@@ -432,7 +432,7 @@ body {
   }
 
   .chosen-menu, .menu-btn:hover {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
 
   .full-menu-container {
@@ -444,11 +444,11 @@ body {
   }
 
   .menu-btn:hover {
-    font-size: 1.2rem;
+    font-size: 1.2rem!important;
   }
 
   .chosen-menu {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
 }
 
@@ -469,11 +469,13 @@ body {
   .menu-header {
     grid-template-columns: repeat(3, 10rem);
   }
+
 }
 
 @media (max-width: 500px) {
   .menu-header {
-    grid-template-columns: repeat(1, 10rem);
+    grid-template-columns: 10rem;
+    justify-content: left;
   }
 }
 
