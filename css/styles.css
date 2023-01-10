@@ -663,6 +663,10 @@ body {
   .cards {
     width: 35%;
   }
+
+  .intro-picture {
+    height: 27vh;
+  }
 }
 
 @media (max-width: 576px) {
